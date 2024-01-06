@@ -1,0 +1,259 @@
+/*--------------------------------------------------------------
+    [ ## Sections ]
+--------------------------------------------------------------*/
+.body-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: rgba(22,39,63,0.5);
+    z-index: 10;
+    content: "";
+    left: 0;
+    top: 0;
+    visibility: hidden;
+    &.active{
+        visibility: visible;
+    }
+}
+.page-wrapper{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-wrapper {
+    padding: 40px 0;
+}
+.doc-inner{
+    white-space: normal;
+    background-color: rgba(24,39,63,1);
+    border: 1px solid $border--base;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    @media only screen and (max-width: 575px) {
+        display: block;
+    }
+}
+.step-wrapper{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at 15% -3%,#365280,#080e17 116%);
+    span{
+        font-size: 30px;
+        color: $white;
+        @media only screen and (max-width: 575px) {
+            font-size: 24px;
+        }
+    }
+    @media only screen and (max-width: 575px) {
+        width: 100%;
+        padding: 20px;
+    }
+}
+.doc-wrapper{
+    width: 70%;
+    padding: 30px;
+    @media only screen and (max-width: 575px) {
+        width: 100%;
+    }
+    .inner-title{
+        position: relative;
+        padding-left: 15px;
+        margin-bottom: 15px;
+        &::before{
+            position: absolute;
+            content: '';
+            top: 6px;
+            left: 0;
+            width: 4px;
+            height: 25px;
+            background-color: $base--color;
+        }
+    }
+    .doc-list{
+        margin-bottom: -8px;
+        li{
+            line-height: 2em;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 8px;
+            padding-left: 15px;
+            position: relative;
+            &::before{
+                position: absolute;
+                content: '';
+                top: 10pz;
+                left: 0;
+                width: 5px;
+                height: 5px;
+                background-color: $color--text;
+                border-radius: 50%;
+            }
+            span{
+                color: $base--color;
+            }
+        }
+        &.two{
+            li{
+                justify-content: flex-start;
+                span{
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+}
+.doc-btn{
+    &.two{
+        display: flex;
+        @media only screen and (max-width: 575px) { 
+            display: block;
+        }
+        a{
+            margin: 5px;
+        }
+    }
+}
+.doc-loader{
+    svg{
+        width: 24px;
+        display: block;
+        .path{
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 0;
+            &.circle {
+                animation: dash .9s ease-in-out infinite;
+            }
+            &.line {
+                stroke-dashoffset: 1000;
+                animation: dash .9s .35s ease-in-out forwards infinite;
+            }
+            &.check {
+                stroke-dashoffset: -100;
+                animation: dash-check .9s .35s ease-in-out forwards infinite;
+            }
+        }
+    }
+}
+@-webkit-keyframes dash {
+    0% {
+      stroke-dashoffset: 1000;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+}
+@keyframes dash {
+    0% {
+      stroke-dashoffset: 1000;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+}
+@-webkit-keyframes dash-check {
+    0% {
+      stroke-dashoffset: -100;
+    }
+    100% {
+      stroke-dashoffset: 900;
+    }
+}
+@keyframes dash-check {
+    0% {
+      stroke-dashoffset: -100;
+    }
+    100% {
+      stroke-dashoffset: 900;
+    }
+}
+.checkmark__circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: $base--color;
+    fill: none;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+.checkmark {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 2;
+    stroke: $white;
+    stroke-miterlimit: 10;
+    margin: 10% auto;
+    box-shadow: inset 0px 0px 0px $base--color;
+    animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+}
+.checkmark__check.animateElement {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+.crossmark__circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: #ff0000;
+    fill: none;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+.crossmark {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 2;
+    stroke: $white;
+    stroke-miterlimit: 10;
+    margin: 10% auto;
+    box-shadow: inset 0px 0px 0px #ff0000;
+    animation: fillred .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+}
+.cross__path.animateElement {
+    stroke: $white;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    transform-origin: 50% 50% 0;
+}
+.cross__path--right.animateElement {
+    animation: 0.3s ease 0.8s normal forwards 1 running stroke;
+}
+.cross__path--left.animateElement {
+    animation: 1s ease 0.8s normal forwards 1 running stroke;
+}
+@keyframes fillred {
+    100% {
+      box-shadow: inset 0px 0px 0px 30px #ff0000;
+    }
+}
+@keyframes stroke {
+    100% {
+      stroke-dashoffset: 0;
+    }
+}
+@keyframes scale {
+    0%, 100% {
+      transform: none;
+    }
+    50% {
+      transform: scale3d(1.1, 1.1, 1);
+    }
+}
+@keyframes fill {
+    100% {
+      box-shadow: inset 0px 0px 0px 30px $base--color;
+    }
+    
+}

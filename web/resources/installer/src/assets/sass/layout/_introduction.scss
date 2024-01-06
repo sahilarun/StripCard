@@ -1,0 +1,115 @@
+.banner-section{
+    position: relative;
+    padding-top: 170px;
+    padding-bottom: 120px;
+    overflow: hidden;
+    @media only screen and (max-width: 575px) {
+        padding-top: 130px;
+        padding-bottom: 80px;
+    }
+    .banner-thumb{
+        position: relative;
+        text-align: right;
+        @media only screen and (max-width: 991px) {
+            text-align: left;
+        }
+        img{
+            width: 80%;
+            margin-left: auto;
+            @media only screen and (max-width: 991px) {
+                margin-left: 0;
+            }
+        }
+        .banner-element-one{
+            position: absolute;
+            top: -8%;
+            right: -12%;
+            animation: scroll-down 6s cubic-bezier(.75,.02,.31,.87) infinite;
+            @media only screen and (max-width: 991px) {
+                right: -8px;
+            }
+            img{
+                width: 90%;
+            }
+        }
+    }
+    .banner-content{
+        .title{
+            width: 95%;
+            color: $white;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            @media only screen and (max-width: 1199px) {
+                width: 100%;
+            }
+            span{
+                color: $base--color;
+                display: initial;
+            }
+        }
+        p{
+            color: $white;
+            font-size: 18px;
+            @media only screen and (max-width: 575px) {
+                font-size: 14px;
+            }
+        }
+        .banner-btn{
+            margin-top: 40px;
+        }
+    }
+}
+.inner-banner-section{
+    .banner-content{
+        text-align: center;
+        .title{
+            font-size: 45px;
+            @media only screen and (max-width: 991px) {
+                font-size: 35px;
+            }
+            @media only screen and (max-width: 575px) {
+                font-size: 26px;
+            }
+        }
+    }
+}
+.breadcrumb {
+    background-color: $base--color;
+    padding: 15px;
+    margin-bottom: 0;
+    margin-top: -30px;
+    position: relative;
+    justify-content: center;
+    border-radius: 15px;
+}
+.breadcrumb li{
+    font-size: 16px;
+    font-weight: 600;
+}
+.breadcrumb-item a{
+    position: relative;
+    z-index: 2;
+    color: $white;
+    @media only screen and (max-width: 991px) {
+        font-size: 18px;
+    }
+}
+.breadcrumb-item.active{
+    color: $white;
+    position: relative;
+    z-index: 2;
+    @media only screen and (max-width: 991px) {
+        font-size: 18px;
+    }
+}
+.breadcrumb-item.active::before{
+    content: "/";
+    font-weight: 600;
+    color: $white;
+    left: 0;
+    top: 1px;
+    position: relative;
+    @media only screen and (max-width: 991px) {
+        font-size: 18px;
+    }
+}

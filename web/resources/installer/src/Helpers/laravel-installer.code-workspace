@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../.."
+		},
+		{
+			"path": "C:/Users/User/Downloads/installation"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "installation"
+	}
+}

@@ -1,0 +1,224 @@
+/*-------------------------------------------------
+    [ ## Buttons ]
+*/
+input[type="button"] {
+	@extend button;
+}
+input[type="reset"] {
+	@extend button;
+}
+input[type="submit"] {
+	@extend button;
+	&:hover {
+		color: $white;
+	}
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	cursor: pointer;
+	-webkit-appearance: button;
+    appearance: button;
+	&:focus {
+		outline: none;
+	}	
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+.btn {
+    -webkit-transition: all 0.3s ease 0.02s;
+    transition: all 0.3s ease 0.02s;
+}
+.btn:active,
+.btn:focus {
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.125) inset;
+}
+.btn {
+    border: 0px solid;
+    border-radius: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    @media only screen and (max-width: 767px) {
+        font-size: 14px;
+    }
+}
+.btn-rounded{
+    border-radius: 3px;
+}
+.btn-capsule{
+    border-radius: 100px;
+}
+/*-------------------------------------------------
+    [ ## custom btn ]
+*/
+.btn--primary{
+    background-color: #7367f0;
+}
+.btn--secondary {
+    background-color: #868e96;
+}
+.btn--success {
+    background-color: #28c76f;
+}
+.btn--danger {
+    background-color: #d63384;
+}
+.btn--warning {
+    background-color: #ff9f43;
+}
+.btn--info {
+    background-color: #1e9ff2;
+}
+.btn--dark {
+    background-color: #10163A;
+}
+.badge--primary{
+    &::before{
+        background-color: #7367f0;
+    }
+}
+.badge--secondary {
+    &::before{
+        background-color: #868e96;
+    }
+}
+.badge--success {
+    &::before{
+        background-color: #28c76f;
+    }
+}
+.badge--danger {
+    &::before{
+        background-color: #d63384;
+    }
+}
+.badge--warning {
+    &::before{
+        background-color: #ff9f43;
+    }
+}
+.badge--info {
+    &::before{
+        background-color: #1e9ff2;
+    }
+}
+.badge--dark {
+    &::before{
+        background-color: #10163A;
+    }
+}
+.border--primary{
+    border: 1px solid #7367f0;
+}
+.border--secondary {
+    border: 1px solid #868e96;
+}
+.border--success {
+    border: 1px solid #28c76f;
+}
+.border--danger {
+    border: 1px solid #ea5455;
+}
+.border--warning {
+    border: 1px solid #ff9f43;
+}
+.border--info {
+    border: 1px solid #1e9ff2;
+}
+.border--dark {
+    border: 1px solid #10163A;
+}
+.badge{
+    position: relative;
+    font-weight: 400;
+    border-radius: 0;
+    padding: 0;
+    font-size: 13px;
+    background-color: transparent;
+    padding-left: 15px;
+    &::before{
+        position: absolute;
+        content: '';
+        top: 3px;
+        left: 0;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+    }
+}
+.btn--base {
+    position: relative;
+    background: $base--color;
+    border-radius: 10px;
+    color: $white;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+    i{
+        font-size: 16px;
+        position: relative;
+        top: 1px;
+    }
+    &.active{
+        background: transparent;
+        color: $base--color;
+        &:focus,
+        &:hover {
+            color: $white;
+            background: $base--color;
+        }
+    }
+    &:focus,
+    &:hover {
+        color: $white;
+        box-shadow: 0 10px 20px rgba($base--color,.4);
+    }
+    @media only screen and (max-width: 991px) {
+        padding: 10px 25px;
+        font-size: 13px;
+    }
+}
+.custom-btn{
+    color: $base--color !important;
+    font-weight: 700;
+}
+.info-btn {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $base--color;
+    border-radius: 5px;
+    color: $white;
+    font-size: 18px;
+    display: none;
+    @media only screen and (max-width: 991px) {
+        display: flex;
+    }
+}
+.chat-cross-btn {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ea5455;
+    border-radius: 5px;
+    color: $white;
+    font-size: 16px;
+    display: none;
+    @media only screen and (max-width: 991px) {
+        display: flex;
+    }
+}

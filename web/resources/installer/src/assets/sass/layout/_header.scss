@@ -1,0 +1,32 @@
+.custom-container{
+    max-width: 1900px;
+}
+.row>*{
+    position: relative;
+}
+@media (min-width: 1480px){
+    .col-xxl-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+@media (max-width: 575px){
+    .col-xs-6 {
+        flex: 0 0 auto;
+        width: 50%;
+        @media only screen and (max-width: 400px) {
+            width: 100%;
+        }
+    }
+}
+::selection{
+    background-color: $base--color;
+    color: $white;
+}
+.fs-10px{
+    font-size: 11px;
+}
+.op-6{
+    opacity: 0.6;
+}

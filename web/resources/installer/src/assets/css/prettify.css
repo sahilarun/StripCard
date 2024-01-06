@@ -1,0 +1,184 @@
+/* GitHub Theme */
+/* Pretty printing styles. Used with prettify.js. */
+/* SPAN elements with the classes below are added by prettyprint. */
+/* plain text */
+.pln {
+  color: #c4c5cf;
+}
+.prettyprint{overflow:auto!important;}
+
+@media screen {
+  /* string content */
+  .str {
+    color: #d63384;
+  }
+
+  /* a keyword */
+  .kwd {
+    color: #c4c5cf;
+  }
+
+  /* a comment */
+  .com {
+    color: #c4c5cf;
+  }
+
+  /* a type name */
+  .typ {
+    color: #ffffff;
+  }
+
+  /* a literal value */
+  .lit {
+    color: #c4c5cf;
+  }
+
+  /* punctuation */
+  .pun {
+    color: #c4c5cf;
+  }
+
+  /* lisp open bracket */
+  .opn {
+    color: #c4c5cf;
+  }
+
+  /* lisp close bracket */
+  .clo {
+    color: #c4c5cf;
+  }
+
+  /* a markup tag name */
+  .tag {
+    color: navy;
+  }
+
+  /* a markup attribute name */
+  .atn {
+    color: teal;
+  }
+
+  /* a markup attribute value */
+  .atv {
+    color: #dd1144;
+  }
+
+  /* a declaration */
+  .dec {
+    color: #c4c5cf;
+  }
+
+  /* a variable name */
+  .var {
+    color: teal;
+  }
+
+  /* a function name */
+  .fun {
+    color: #990000;
+  }
+}
+/* Use higher contrast and text-weight for printable form. */
+@media print, projection {
+  .str {
+    color: #006600;
+  }
+
+  .kwd {
+    color: #006;
+    font-weight: bold;
+  }
+
+  .com {
+    color: #600;
+    font-style: italic;
+  }
+
+  .typ {
+    color: #404;
+    font-weight: bold;
+  }
+
+  .lit {
+    color: #004444;
+  }
+
+  .pun, .opn, .clo {
+    color: #444400;
+  }
+
+  .tag {
+    color: #006;
+    font-weight: bold;
+  }
+
+  .atn {
+    color: #440044;
+  }
+
+  .atv {
+    color: #006600;
+  }
+}
+/* Style */
+pre.prettyprint {
+  background: #101436;
+  font-size: 14px;
+  line-height: 1.5;
+  border: 1px solid #363a5d;
+  border-radius: 10px;
+padding: 20px;
+text-align:left;
+width: auto;
+margin-top: 20px;
+}
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #888;
+}
+
+.linenums li {
+  background: #FAFAFA;
+  padding-left: 10px;
+  border-left: 1px solid #CCC;
+}
+
+.linenums li {
+  padding-top: 5px;
+}
+
+.linenums li + li {
+  padding-top: 0;
+}
+
+.linenums li:last-child {
+  padding-bottom: 5px;
+}
+
+
+
+/* IE indents via margin-left */
+li.L0,
+li.L1,
+li.L2,
+li.L3,
+li.L4,
+li.L5,
+li.L6,
+li.L7,
+li.L8,
+li.L9 {
+  /* */
+}
+
+/* Alternate shading for lines */
+li.L1,
+li.L3,
+li.L5,
+li.L7,
+li.L9 {
+  /* */
+}

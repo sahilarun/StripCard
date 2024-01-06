@@ -1,0 +1,56 @@
+/*-------------------------------------------------
+    [ ### font-variable start ]
+*/
+$font_heading: 'Outfit', sans-serif;
+$font_body: 'Outfit', sans-serif;
+/*-------------------------------------------------
+    [ ### font-variable end ]
+*/
+
+/*-------------------------------------------------
+    [ ### font_family-variable start ]
+*/
+$font-awesome: 'Font Awesome 5 Free';
+/*-------------------------------------------------
+    [ ### font_family-variable end ]
+*/
+
+/*-------------------------------------------------
+    [ ### font_size-variable start ]
+*/
+$base__font-size: 16px;
+$heading__one: 30px;
+$heading__two: 22px;
+$heading__three: 18px;
+$heading__four: 16px;
+$heading__five: 14px;
+$heading__six: 12px;
+/*-------------------------------------------------
+    [ ### font_size-variable end ]
+*/
+
+/*-------------------------------------------------
+    [ ### line_height-variable start ]
+*/
+$font__line-height-body: 1.5em;
+$font__line-height-heading: 1.5em;
+$font__line-height-paragraph: 2em;
+$font__line-height-pre: 1.6em;
+/*-------------------------------------------------
+    [ ### line_height-variable start ]
+*/
+
+/*-------------------------------------------------
+    [ ### initial-color-variable start ]
+*/
+$white: #ffffff; // white color
+$color--heading: #ffffff; // Heading color
+$color--text: #c4c5cf; // Text color
+$base--color: #328AF1; // Base color
+$border--base: rgba(255, 255, 255, 0.1); // Border base color
+$section--bg: #16273f; // Section bg color
+$body--bg: #151F32; // Body bg color
+$bg--gray: #131740; // Gray bg color
+/*-------------------------------------------------
+    [ ### initial-color-variable end ]
+*/
