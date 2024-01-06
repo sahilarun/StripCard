@@ -1,0 +1,433 @@
+.dark-version{
+    background-color: $bg--dark;
+    h1, h2, h3, h4, h5, h6 {
+        color: #f7f7f7 !important;
+    }
+    p,li,span{
+        color: #9097a7;
+    }
+    button{
+        color: #9097a7;
+    }
+    .header{
+        background-color: $section--dark;
+    }
+    .header-link{
+        color: #9097a7;
+    }
+    .header-top{
+        .header-version-bar{
+            background-color: $bg--dark;
+        }
+        .header-search-bar{
+            .header-search-wrapper{
+                background-color: $section--dark;
+            }
+        }
+        .header-notification-bar{
+            .notification-wrapper{
+                background-color: $section--dark;
+                span{
+                    color: #9097a7;
+                }
+            }
+            .notification-footer{
+                a{
+                    color: #f7f7f7;
+                }
+            }
+        }
+        .header-support-bar{
+            .header-support-wrapper{
+                background-color: $section--dark;
+            }
+        }
+        .header-sales-bar{
+            .header-sales-wrapper{
+                background-color: $section--dark;
+            }
+        }
+        .header-project-bar{
+            .header-project-wrapper{
+                background-color: $section--dark;
+            }
+        }
+    }
+    .header-bottom{
+        .header-user-bar{
+            .header-user-wrapper{
+                background-color: $section--dark;
+            }
+        }
+    }
+    .dashboard-path{
+        i{
+            color: #9097a7;
+        }
+    }
+    .bling{
+        background: #9097a7 !important;
+        &::before{
+            background: #9097a7 !important;
+        }
+        &::after{
+            background: #9097a7 !important;
+        }
+    }
+    .settings-sidebar-area{
+        background-color: $section--dark;
+        .settings-sidebar-header{
+            border-color: #3a4250;
+        }
+    }
+    .custom-inner-card{
+        background-color: $section--dark;
+        border-color: #3a4250;
+    }
+    .form--control{
+        color: #9097a7;
+    }
+    .picker{
+        border-color: #3a4250;
+    }
+    .picker input[type="color"]::-webkit-color-swatch {
+        border-color: #3a4250;
+    }
+    .picker input{
+        background-color: $bg--dark;
+        color: #9097a7;
+    }
+    .modal-content{
+        background-color: $section--dark;
+        .modal-header{
+            border-color: #3a4250;
+            .btn-close{
+                background: #ffffff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+            }
+        }
+        .modal-footer{
+            border-color: #3a4250;
+        }
+    }
+    .nice-select{
+        .list{
+            background-color: $section--dark;
+        }
+        .option{
+            &.disabled{
+                background-color: $bg--dark;
+            }
+        }
+    }
+    .nice-select .option.selected.focus{
+        background-color: $bg--dark;
+    }
+    .support-card-wrapper{
+        background-color: $section--dark;
+    }
+    .select2-selection--single{
+        border-color: #3a4250 !important;
+    }
+    .chat-form{
+        .publisher{
+            background-color: $section--dark;
+            border-color: #3a4250;
+            .publisher-btn{
+                background-color: $bg--dark;
+                color: #9097a7;
+                label{
+                    color: #9097a7;
+                }
+            }
+            .publisher-input{
+                background-color: $bg--dark;
+                color: #9097a7;
+                &::placeholder{
+                    color: #9097a7;
+                }
+            }
+        }
+    }
+    .support-profile-wrapper{
+        .support-profile-header{
+            border-color: #3a4250;
+        }
+    }
+    .chat-container{
+        .media{
+            .media-body{
+                p{
+                    background-color: $bg--dark;
+                    color: #9097a7;
+                    &::before{
+                        background: $bg--dark;
+                    }
+                }
+            }
+            .avatar{
+                border-color: #3a4250;
+            }
+        }
+    }
+    .custom-card{
+        .card-body{
+            .card-form{
+                .toggle-container{
+                    .switch-toggles{
+                        background-color: $bg--dark;
+                    }
+                }
+            }
+        }
+    }
+    .sidebar{
+        margin-left: 45px !important;
+        width: 220px !important;
+        background-color: $section--dark !important;
+    }
+    .sidebar-logo{
+        .sidebar-menu-bar{
+            color: #9097a7;
+        }
+    }
+    .sidebar-user-area{
+        border-color: #3a4250;
+        .sidebar-user-thumb{
+            img{
+                border-color: #3a4250;
+            }
+        }
+    }
+    .custom-inner-card .card-inner-header{
+        border-color: #3a4250;
+    }
+    .nav-tabs{
+        border-color: #3a4250;
+    }
+    .richtexteditor.rte-modern{
+        border-color: #3a4250;
+    }
+    .user-profile-thumb{
+        border-color: #3a4250;
+    }
+    .user-profile-list-two{
+        li{
+            background-color: $bg--dark;
+            color: $white;
+        }
+    }
+    .user-profile-list-three{
+        li{
+            span{
+                color: $white;
+            }
+        }
+    }
+    .user-profile-list{
+        li{
+            span{
+                color: $white;
+            }
+        }
+        &.two{
+            li{
+                background-color: $bg--dark;
+                color: $white;
+                span{
+                    color: #9097a7;
+                }
+            }
+        }
+    }
+    .sidebar-menu{
+        .sidebar-menu-item{
+            a{
+                .menu-icon{
+                    color: #9097a7;
+                }
+            }
+            &.active{
+                color: #f7f7f7;
+                a{
+                    .menu-title{
+                        color: #f7f7f7;
+                    }
+                }
+                ul{
+                    li{
+                        a{
+                            .menu-title{
+                                color: #9097a7;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .dashboard-title-part{
+        background-color: $bg--dark;
+    }
+    .dashbord-item{
+        background-color: $section--dark;
+    }
+    .chart-wrapper{
+        background-color: $section--dark;
+    }
+    .apexcharts-legend-text{
+        color: #9097a7 !important;
+    }
+    .apexcharts-yaxis{
+        text{
+            fill: #9097a7 !important;
+        }
+    }
+    .apexcharts-grid{
+        line{
+            stroke: #3a4250 !important;
+        }
+    }
+    .apexcharts-graphical{
+        line{
+            stroke: #3a4250 !important;
+        }
+    }
+    .apexcharts-svg{
+        path{
+            stroke: #3a4250 !important;
+        }
+    }
+    .apexcharts-xaxis-texts-g{
+        text{
+            fill: #9097a7 !important;
+        }
+    }
+    .chart-area-footer{
+        border-color: #3a4250;
+    }
+    .table-area{
+        background-color: $section--dark;
+    }
+    .custom-table{
+        thead{
+            tr{
+                border-color: #3a4250;
+                th{
+                    color: #f7f7f7;
+                }
+            }
+        }
+        tbody{
+            tr{
+                border-color: #3a4250;
+                td{
+                    color: #9097a7;
+                    .user-list{
+                        li{
+                            img{
+                                border-color: #3a4250;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .table-header{
+        .table-btn-area{
+            .table-search-wrapper{
+                border-color: #3a4250;
+                input{
+                    color: #9097a7;
+                }
+            }
+        }
+    }
+    .form--control{
+        background-color: $section--dark;
+        border-color: #3a4250;
+    }
+    select{
+        option{
+            color: #f7f7f7;
+        }
+    }
+    .rte-modern.rte-desktop.rte-toolbar-default{
+        background-color: $section--dark;
+        border-color: #3a4250;
+    }
+    .richtexteditor.rte-modern rte-toolbar{
+        background-color: $section--dark;
+        border-color: #3a4250;
+    }
+    .richtexteditor.rte-modern rte-bottom{
+        background-color: $section--dark;
+    }
+    rte-content{
+        background-color: $section--dark;
+        border-color: #3a4250;
+    }
+    .rte-modern rte-line-break{
+        border-color: #3a4250;
+    }
+    .custom-card{
+        background-color: $section--dark;
+        .card-header{
+            background: $section--dark;
+            border-color: #3a4250;
+        }
+        .card-body{
+            .card-form{
+                label{
+                    color: #f7f7f7;
+                }
+            }
+        }
+    }
+    label{
+        color: #f7f7f7;
+    }
+    .input-group-text{
+        color: #f7f7f7;
+    }
+    .toggle-container{
+        .switch-toggles{
+            background-color: $bg--dark;
+        }
+    }
+    .pagination {
+        .page-item{
+            a,span{
+                border-color: #3a4250;
+            }
+            &.disabled{
+                span{
+                    border-color: #3a4250;
+                }
+            }
+        }
+    }
+    .copyright-area{
+        background-color: $section--dark;
+        p{
+            a,span{
+                color: #f7f7f7;
+            }
+        }
+    }
+    .filepond--panel-root {
+        background-color: $bg--dark;
+    }
+    .select2-container--default .select2-selection--multiple{
+        background-color: transparent;
+        border-color: #3a4250;
+    }
+    .select2-container--default .select2-selection--multiple .select2-selection__choice{
+        background-color: $bg--dark;
+        border-color: #3a4250;
+    }
+    .select2-container--default .select2-selection--multiple .select2-selection__choice__remove{
+        background-color: $bg--dark !important;
+        border-color: #3a4250;
+    }
+}

@@ -1,0 +1,28 @@
+.copyright-wrapper{
+  margin-left: 265px;
+  @media only screen and (max-width: 1199px) {
+    margin-left: 0;
+  }
+  &.active{
+    margin-left: 100px;
+  }
+}
+.copyright-area{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $white;
+  padding: 10px 15px;
+  margin-top: 15px;
+  @media only screen and (max-width: 575px) {
+    display: block;
+    text-align: center;
+  }
+  p{
+    margin-bottom: 0;
+    a,span{
+      color: $base--color;
+      font-weight: 700;
+    }
+  }
+}
