@@ -1,0 +1,2 @@
+<input type="hidden" name="<?php echo e($name ?? ""); ?>" value="<?php echo e($value ?? ""); ?>">
+<?php /**PATH E:\xampp-8.0.2\htdocs\strip_card_final\full_project\resources\views/admin/components/form/hidden-input.blade.php ENDPATH**/ ?>
