@@ -1,0 +1,24 @@
+<?php
+
+namespace Database\Seeders\Admin;
+
+use App\Models\Blog;
+use Illuminate\Database\Seeder;
+
+class BlogSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        $blogs = array(
+            array('id' => '1','admin_id' => '1','category_id' => '5','name' => '{"language":{"en":{"name":"The Rise of Virtual Credit Cards: Transforming Online Payments"},"es":{"name":"El auge de las tarjetas de cr\\u00e9dito virtuales: transformando los pagos en l\\u00ednea"}}}','slug' => 'the-rise-of-virtual-credit-cards-transforming-online-payments','image' => '4ed4a526-d4e2-4132-82c5-5d846e044020.webp','tags' => '["StripCard","VirtualCard","Appdevs"]','details' => '{"language":{"en":{"details":"<p>In today\\u2019s digital age, online payments have become an integral part of our lives. But with convenience comes the need for security. This blog explores the phenomenon of virtual credit cards, their growing popularity, and how they are revolutionizing online payments. We delve into the benefits of virtual credit cards, their unique features, and why they are considered the future of secure online transactions.<\\/p>"},"es":{"details":"<p>En la era digital actual, los pagos en l\\u00ednea se han convertido en una parte integral de nuestras vidas. Pero la comodidad conlleva la necesidad de seguridad. Este blog explora el fen\\u00f3meno de las tarjetas de cr\\u00e9dito virtuales, su creciente popularidad y c\\u00f3mo est\\u00e1n revolucionando los pagos en l\\u00ednea. Profundizamos en los beneficios de las tarjetas de cr\\u00e9dito virtuales, sus caracter\\u00edsticas \\u00fanicas y por qu\\u00e9 se consideran el futuro de las transacciones seguras en l\\u00ednea.<\\/p>"}}}','status' => '1','created_at' => '2023-09-05 17:40:32','updated_at' => '2023-09-05 17:40:35'),
+            array('id' => '2','admin_id' => '1','category_id' => '5','name' => '{"language":{"en":{"name":"Entrepreneurial Success with Virtual Credit Card Services"},"es":{"name":"\\u00c9xito empresarial con servicios de tarjetas de cr\\u00e9dito virtuales"}}}','slug' => 'entrepreneurial-success-with-virtual-credit-card-services','image' => '56a5408b-0f2b-4eb0-9e56-004435a8170e.webp','tags' => '["Money","Online","StripCard","Payment"]','details' => '{"language":{"en":{"details":"<p>In today\\u2019s digital age, online payments have become an integral part of our lives. But with convenience comes the need for security. This blog explores the phenomenon of virtual credit cards, their growing popularity, and how they are revolutionizing online payments. We delve into the benefits of virtual credit cards, their unique features, and why they are considered the future of secure online transactions.<\\/p>"},"es":{"details":"<p>En la era digital actual, los pagos en l\\u00ednea se han convertido en una parte integral de nuestras vidas. Pero la comodidad conlleva la necesidad de seguridad. Este blog explora el fen\\u00f3meno de las tarjetas de cr\\u00e9dito virtuales, su creciente popularidad y c\\u00f3mo est\\u00e1n revolucionando los pagos en l\\u00ednea. Profundizamos en los beneficios de las tarjetas de cr\\u00e9dito virtuales, sus caracter\\u00edsticas \\u00fanicas y por qu\\u00e9 se consideran el futuro de las transacciones seguras en l\\u00ednea.<\\/p>"}}}','status' => '1','created_at' => '2023-09-05 17:41:20','updated_at' => '2023-09-05 17:41:20'),
+            array('id' => '3','admin_id' => '1','category_id' => '2','name' => '{"language":{"en":{"name":"Entrepreneurial Success with Virtual Credit Card Services"},"es":{"name":"\\u00c9xito empresarial con servicios de tarjetas de cr\\u00e9dito virtuales"}}}','slug' => 'entrepreneurial-success-with-virtual-credit-card-services','image' => '5738b6fd-6f84-4fb9-b43f-4a60b2406301.webp','tags' => '["StripCard","Online Payment","Virtual Card"]','details' => '{"language":{"en":{"details":"<p>Are you an entrepreneur looking to diversify your business and boost revenue? In this blog, we explore how offering virtual credit card services to your clients can be a game-changer. We discuss the opportunities, benefits, and strategies for entrepreneurs to leverage the virtual credit card trend and create a win-win scenario for their clients and their business.<\\/p>"},"es":{"details":"<p>\\u00bfEs usted un emprendedor que busca diversificar su negocio y aumentar los ingresos? En este blog, exploramos c\\u00f3mo ofrecer servicios de tarjetas de cr\\u00e9dito virtuales a sus clientes puede cambiar las reglas del juego. Discutimos las oportunidades, beneficios y estrategias para que los emprendedores aprovechen la tendencia de las tarjetas de cr\\u00e9dito virtuales y creen un escenario en el que todos ganan para sus clientes y sus negocios.<\\/p>"}}}','status' => '1','created_at' => '2023-09-05 17:41:53','updated_at' => '2023-09-05 17:41:53')
+          );
+          Blog::insert($blogs);
+    }
+}
