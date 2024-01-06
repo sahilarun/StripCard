@@ -1,0 +1,16 @@
+.banner-section{
+    position: relative;
+    z-index: 2;
+    .baner-element{
+        position: absolute;
+        top: -40%;
+        opacity: 0.08;
+        z-index: -1;
+        @media only screen and (max-width: 1024px) {
+            top: -10%;
+          }
+          @media only screen and (max-width: 768px) {
+            top: 0%;
+          }
+    }
+}

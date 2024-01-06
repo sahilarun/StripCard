@@ -1,0 +1,575 @@
+/*-------------------------------------------------
+    [ ## Preloader ]
+*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $body--bg;
+  z-index: 9999999;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+*,html{margin:0;padding:0}
+
+
+#preloader{
+  svg{
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 600px;
+      height: 90px;
+      display:inline-block;
+  }
+}
+/*-------------------------------------------------
+  [ ## Header ]
+*/
+.header-section{
+  position: relative;
+  z-index: 9;
+}
+    .header-area{
+        color: $white;
+        display: flex;
+        @media only screen and (max-width: 570px) {
+            display: block;
+        }
+    }
+    .social-icons{
+        li{
+            padding: 0px 10px;
+        }
+    }
+    .contact{
+        .item{
+            padding: 0px 10px;
+            font-size: 16px;
+        }
+    }
+
+.navber-section{
+     background-color: $white; 
+     .search input{
+        padding: 10px;
+        border-radius: 60px;
+        margin-top: 5px;
+        border: 1px solid $border--base;
+        width: 200px;
+        height: 40px;
+        font-size: 16px;
+        &::placeholder{
+            color: $placeholder--color;
+            font-size: 14px;
+        }
+    }
+    .search button{
+        padding: 5px 15px;   
+        border-radius: 50px;
+        margin-left: 5px;
+        margin-top: 5px;
+        color: $white;
+        background-color: $base--color;
+    }
+    .search button:hover{
+        background-color: $hover--color;
+        transition: all 0.6s;
+    }
+}
+
+.header {
+    background-color: transparent;
+    width: 100%;
+    z-index: 9;
+}
+.header-section.header-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+  background-color: transparent;
+  margin-top: 0;
+  animation-fill-mode: initial;
+  .header-top-area{
+      display: none !important;
+  }
+  .header-bottom-area{
+    background-color: #001125;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}
+.header-bottom-area{
+    position: relative;
+    background: transparent;
+    .navbar-expand-lg{
+        background-color: transparent;
+        padding: 0 !important;
+    }
+    @media (max-width: 991px) {
+        .navbar-collapse{
+            background-color: transparent !important;
+            padding: 0 !important;
+        }
+        .navbar-collapse .main-menu {
+            padding: 15px 0;
+        }
+        .menu_has_children .sub-menu {
+            display: none !important;
+            li{
+                width: 100%;
+            }
+        }
+        .navbar-collapse .main-menu .menu_has_children.show .sub-menu ,
+        .navbar-collapse .main-menu .menu_has_children.show .sub-menu {
+            display: flex !important;
+            flex-wrap: wrap;
+        }
+    }
+    .navbar-collapse .main-menu li:last-child .sub-menu {
+        left: auto;
+        right: 0;
+    }
+    .navbar-collapse .main-menu{
+        align-items: center;
+        @media only screen and (max-width: 991px) {
+            align-items: flex-start;
+        }
+    }
+    .navbar-collapse .main-menu li {
+        position: relative;
+        padding-right: 40px;
+        @media only screen and (max-width:1199px) {
+            padding-right: 22px !important;
+        }
+        &:last-child{
+            padding-right: 0;
+            margin-right: 0;
+        }
+        &:hover .sub-menu{
+            transform: scaleY(1);
+        }
+    }
+    .navbar-collapse .main-menu li.menu_has_children {
+        position: relative;
+        i{
+            font-size: 12px;
+            margin-left: 5px;
+        }
+    }
+    @media (max-width: 991px) {
+        .navbar-collapse .main-menu li.menu_has_children::before {
+            top: 12px;
+            right: 15px;
+        }
+    }
+    .navbar-collapse .main-menu li a {
+        position: relative;
+        padding: 30px 0;
+        font-weight: 600;
+        font-size: 16px !important;
+        align-items: center;
+        color: $color--text;
+        display: inline-block;
+        font-size: 15px;
+        transition: all 0.5s;
+        z-index: 9;
+        &::after{
+            position: absolute;
+            content: '';
+            bottom: 10px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: $base--color;
+            transition: all 0.5s;
+        }
+        &:hover{
+            color: $base--color;
+            &::after{
+                width: 100%;
+            }
+        }
+        &.active{
+            color: $base--color;
+            &::after{
+                width: 100%;
+            }
+        }
+    }
+    
+    @media (max-width: 991px) {
+        .navbar-collapse .main-menu li a {
+            padding: 12px 15px !important;
+        }
+    }
+    .navbar-collapse .main-menu li .sub-menu {
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        padding: 10px 5px;
+        width: 180px;
+        background-color: $section--bg;
+        border: 1px solid $border--base;
+        border-radius: 15px;
+        display: block;
+        transform: scaleY(0);
+        transform-origin: top left;
+        transition: all 0.5s;
+        z-index: 10;
+        @media only screen and (max-width: 991px) {
+            width: 180px;
+        }
+        li{
+            margin-right: 0;
+            padding-right: 0;
+            transition: all ease 0.5s;
+            position: relative;
+            z-index: 2;
+            &:last-child {
+                border-bottom: 0px solid;
+            }
+            &:hover{
+                a{
+                    color: $base--color;
+                }
+            }
+            a {
+                width: 100%;
+                font-size: 12px;
+                padding: 5px 15px;
+                display: block;
+                transition: all ease 0.3s;
+                &::before{
+                    display: none;
+                }
+                
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        .navbar-collapse .main-menu li .sub-menu {
+            position: initial;
+            opacity: 1;
+            visibility: visible;
+            display: none;
+            -webkit-transition: none;
+            transition: none;
+        }
+    }
+    .navbar-collapse .main-menu li:last-child .sub-menu {
+        left: auto;
+        right: 0;
+    }
+}
+.site-logo{
+    max-width: 160px;
+    @media only screen and (max-width: 991px) {
+        max-width: 120px;
+    }
+}
+.header-action{
+    margin-left: 40px;
+    @media only screen and (max-width: 991px) {
+        margin-left: 12px;
+    }
+}
+.language-select{
+    background: transparent;
+    color: $white;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    @media only screen and (max-width: 991px) {
+        margin-left: 12px;
+    }
+}
+.header-link{
+    @media only screen and (max-width: 991px) {
+        display: none;
+    }
+    a{
+        color: $white;
+        i{
+            color: $base--color;
+            margin-right: 5px;
+            font-size: 16px;
+        }
+    }
+    a+a{
+        margin-left: 20px;
+    }
+}
+.header-social{
+    li{
+      display: inline-block;
+      font-size: 13px;
+      color: $white;
+    }
+    li + li{
+      margin-left: 15px;
+    }
+}
+.notification-icon{
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($white, 0.05);
+    color: $color--text;
+    border: 1px solid #353a68;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar-toggler span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    background-color: $base--color;
+    color: $white;
+    font-size: 14px;
+}
+
+.account {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scaleY(0);
+            transform: translate(-50%, -50%) scaleY(0);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    z-index: 11;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .account.active {
+    -webkit-transform: translate(-50%, -50%) scaleY(1);
+            transform: translate(-50%, -50%) scaleY(1);
+  }
+  @media only screen and (max-width: 575px) {
+    .account {
+      top: 53%;
+    }
+  }
+  .account .account-wrapper {
+    position: relative;
+    width: 430px;
+    height: auto;
+    background-color: #0f183d;
+    border: 1px solid rgba($white, 0.1);
+    // box-shadow: 0 0 10px rgb(0 0 0 / 75%);
+    padding: 40px 30px;
+    border-radius: 8px;
+    display: none;
+  }
+  @media only screen and (max-width: 470px) {
+    .account .account-wrapper {
+      width: 400px;
+    }
+  }
+  @media only screen and (max-width: 435px) {
+    .account .account-wrapper {
+      width: 370px;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .account .account-wrapper {
+      width: 350px;
+      padding: 15px 20px;
+    }
+  }
+  @media only screen and (max-width: 380px) {
+    .account .account-wrapper {
+      width: 320px;
+    }
+  }
+  @media only screen and (max-width: 350px) {
+    .account .account-wrapper {
+      width: 300px;
+      padding: 15px;
+    }
+  }
+  @media only screen and (max-width: 330px) {
+    .account .account-wrapper {
+      width: 290px;
+      padding: 15px;
+    }
+  }
+  .account .account-wrapper.change-form {
+    display: block;
+  }
+  .account .account-wrapper .account-cross-btn {
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    background-color: $base--color;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .account .account-wrapper .account-cross-btn:hover::after, .account .account-wrapper .account-cross-btn:hover::before {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  .account .account-wrapper .account-cross-btn::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 20px;
+    background-color: #fff;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    left: 11.2px;
+    bottom: 50%;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .account .account-wrapper .account-cross-btn::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 20px;
+    background-color: #fff;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    left: 11.3px;
+    top: 48%;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .account .account-wrapper .account-logo {
+    margin-bottom: 30px;
+  }
+  .account .account-wrapper p {
+    font-size: 12px;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .account .account-wrapper .account-form input {
+    border: 2px solid rgba(255, 255, 255, 0.08) !important;
+  }
+  .account .account-wrapper .account-form input:focus {
+    border-color: #328AF1 !important;
+  }
+  .account .account-wrapper .account-form input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+  .account .account-wrapper .account-form input::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+  .account .account-wrapper .account-form input:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+  .account .account-wrapper .account-form input::-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+  .account .account-wrapper .account-form input::placeholder {
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+  .account .account-wrapper .account-form .forgot-item a {
+    color: $base--color;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .account .account-wrapper .account-form .forgot-item a:hover {
+    color: $hover--color;
+  }
+  .account .account-wrapper .account-form .or-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 20px;
+    gap: 37px;
+  }
+  .account .account-wrapper .account-form .or-area .or-title {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .account .account-wrapper .account-form .or-area .or-line {
+    height: 1px;
+    border: 0.5px solid rgba(255, 255, 255, 0.08);
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .account .account-wrapper .account-form .account-item {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .account .account-wrapper .account-form .account-item a {
+    color: $base--color;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .account .account-wrapper .account-form .account-item a:hover {
+    color: $hover--color;
+  }
+  .account .account-wrapper .account-form .account-form-btn {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  .account .account-wrapper .account-form .account-form-btn a {
+    width: 35px;
+    height: 35px;
+    line-height: 30px;
+    display: inline-block;
+    text-align: center;
+    background-color: rgba(50, 138, 241, 0.1);
+    border: 0.5px solid rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    margin: 8px;
+    fill: #fff;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .account .account-wrapper .account-form .account-form-btn a.facebook:hover {
+    background-color: #3b5998;
+  }
+  .account .account-wrapper .account-form .account-form-btn a.google:hover {
+    background-color: #DB4437;
+  }
+  .account .account-wrapper .account-form .account-form-btn a.apple:hover {
+    background-color: #000000;
+  }
+  .account .account-wrapper .account-form .custom-check-group label {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .account .account-wrapper .account-form .custom-check-group label a {
+    color: $base--color;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .account .account-wrapper .account-form .custom-check-group label a:hover {
+    color: $hover--color;
+  }
+  .show_hide_password{
+    position: relative;
+  }
+  .show-pass{
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-size: 12px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }

@@ -1,0 +1,269 @@
+.about-section{
+    .about-item{
+        .item-icon{
+            position: relative;
+            top: 5px;
+            background-color: $base--color;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            color: $white;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+    }
+}
+.feature-section{
+    .feature-item{
+        background-color: $section--bg;
+        padding: 20px;
+        margin-top: 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+        transition: all 0.6s;
+        &:hover{
+            background-color: #053473;
+        }
+        a{
+            color: $base--color
+        }
+    }
+}
+.how-it-works-section{
+    text-align: center;
+    .how-it-works-wrapper{
+        position: relative;
+        z-index: 2;
+        &::after{
+            position: absolute;
+            content: '';
+            top: 115px;
+            left: 20%;
+            width: calc(100% - 40%);
+            height: 100%;
+            border-top: 2px dashed rgba(255,255,255,0.2);
+            z-index: -1;
+        }
+    }
+    .how-it-work-number{
+        @media only screen and (max-width: 768px) {
+            margin-top: 15px;
+          }
+        span{
+            width: 80px;
+            height: 80px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: $base--color;
+            color: $white;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+    .how-it-work-area{
+        background-color: $section--bg;
+        padding: 15px;
+        margin-top: 50px;
+        border-radius: 10px;
+        .how-it-work-icon{
+            font-size: 50px;
+            color: $base--color;
+        }
+        .how-it-work-title{
+            padding-top: 15px;
+        }
+    }
+}
+.service-section{
+    .service-item{
+        background-color: $section--bg;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+        transition: all 0.5s;
+        &:hover{
+            transform: scale(1.1);
+            background-color: #053473;
+        }
+        .service-icon{
+            img{
+                width: 100px;
+            }
+        }
+        .service-content{
+            padding-top: 15px;
+        }
+    }
+}
+.statistics-section{
+    background-color: $section--bg;
+    
+    .counter{
+        i{
+            font-size: 50px;
+            color: $base--color
+        }
+    }
+}
+.call-to-action-section{
+    .bg_img{
+        border-radius: 10px;
+    }
+    .baner-area{
+        padding-left: 60px;
+        @media only screen and (max-width: 480px) {
+            padding-left: 10px;
+          }
+    }
+}
+.blog-section{
+    .blog-item{
+        background-color: $section--bg;
+        border-radius: 10px;
+        .blog-content{
+            padding: 20px;
+        }
+    }
+}
+.contact-section{
+    .contact-widget-box{
+        .contact-icon{
+            font-size: 30px;
+            color: $base--color;
+            padding-top: 10px;
+        }
+        .contact-containt{
+            padding-left: 15px;
+        }
+    }
+}
+.deposit-wrapper{
+    .deposit-form{
+        background-color: $section--bg;
+        padding: 50px;
+        border-radius: 10px;
+    }
+}
+.testimonial-area{
+    overflow: hidden;
+}
+.card-wrapper{
+    background-color: $section--bg;
+    padding: 30px 40px;
+    border-radius: 10px;
+    .card-balance{
+        span{
+            font-size: 30px;
+        }
+    }
+    .card-thumb{
+        text-align: center;
+        img{
+            width: 300px;
+        }
+    }
+    .card-content{
+        .card-details{
+            margin: 10px 15px;
+            font-size: 16px;
+            .title{
+                font-weight: 300;
+                margin-top: 5px;
+            }
+            .details-icon{
+                i{
+                    border-radius: 50px;
+                    background-color: $base--color;
+                    padding: 10px;
+                    color: $white;
+                    transition: all 0.6s;
+                    &:hover{
+                        background-color: #149090;
+                    }
+                }
+                   
+            }
+
+        }
+    }
+}
+.card-custom-area{
+    display: flex;
+  }
+  .card-body{
+    .form-group{
+        input{
+            position: relative;
+        }
+        .field-icon{
+            position: absolute;
+            right: 30px;
+            top: 45px;
+        }
+    }
+  }
+
+.card-slider{
+    overflow: hidden;
+}
+
+.deposit-form{
+    .form-group{
+       input{
+        position: relative;
+       }
+       .currency{
+        position: absolute;
+        right: 0px;
+        background-color: #13baba;
+        color: #ffffff;
+        padding: 6px 20px;
+        top: 38px;
+        border: none;
+        border-radius: 0px 15px 15px 0px;
+
+       }
+    }
+}
+.card-wrapper{
+    @media only screen and (max-width: 991px) {
+        display: block !important;
+        text-align: center;
+         .card-content .card-details{
+            margin: 10px 0px;
+        }
+      }
+}
+
+.deposit-form{
+    .preview-item {
+      border-bottom: 1px solid $border--base;
+      padding-top: 8px;
+    }
+}
+.select2-container--default .select2-selection--single{
+    background-color: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 15px;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+    color: #ebebeb;
+}
+.select2-dropdown{
+    background-color: $section--bg;
+}
+.select2-container--default .select2-search--dropdown .select2-search__field{
+    background-color: $section--bg;
+}
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable{
+    background-color: $base--color;
+}
+.select2-container--default .select2-results__option--selected{
+    background-color: $base--color;
+}

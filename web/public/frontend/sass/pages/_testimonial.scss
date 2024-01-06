@@ -1,0 +1,94 @@
+/*-------------------------------------------------
+    [ ## Testimonial ]
+*/
+.testimonial-section{
+    overflow: hidden;
+    .client-img{
+        img{
+            width: 70px;
+            border-radius: 50%;
+        }
+    }
+
+}
+@media (min-width: 1320px){
+    .testimonial-section{
+        .container{
+            padding-right: calc((100vw - 1176px) / 2);
+            max-width: calc(1320px + ((100vw - 1320px) / 2));
+            left: calc((100vw - 1320px) / 4);
+            position: relative;
+            overflow: hidden;
+        }
+    }
+}
+.testimonial-slider{
+    .swiper-android .swiper-slide, .swiper-wrapper {
+        transform: translateZ(0);
+    }
+}
+.testimonial-wrapper{
+    padding: 40px;
+    background-color: $section--bg;
+    box-shadow: 0 0 10px rgba(0,0,0,0.75);
+    border-radius: 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    .client-details{
+        width: 100%;
+            img{
+                width: 70px;
+                border-radius: 50%;
+            }
+            p{
+                font-size: 14px;
+                margin: 0px;
+            }
+        }
+    }
+.testimonial-thumb{
+    position: relative;
+    width: 168px;
+    img{
+        border-radius: 1.25rem;
+    }
+    .testimonial-quote{
+        position: absolute;
+        top: -20px;
+        right: -20px;
+        width: 60px;
+        height: 60px;
+        line-height: 50px;
+        background-color: $base--color;
+        border: 5px solid $border--base;
+        border-radius: 50%;
+        text-align: center;
+        .fill-white{
+            fill: $white;
+        }
+    }
+}
+.testimonial-section{
+    padding-left: 30px;
+    @media only screen and (max-width: 991px) {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 20px;
+    }
+    .testimonial-ratings{
+        margin-bottom: 15px;
+        i{
+            color: #feb240;
+        }
+    }
+    p{
+        font-size: 18px;
+    }
+    .testimonial-user-content{
+        .title{
+            span{
+                color: $base--color;
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+/*-------------------------------------------------
+    [ ## Heading ]
+*/
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	line-height: $font__line-height-heading;
+	color: $color--heading;
+  -webkit-font-smoothing: antialiased;
+  font-family: $font_heading;
+  font-weight: 600;
+}
+h1 {
+  font-size: $heading__one;
+  @media only screen and (max-width: 1199px) {
+    font-size: 50px;
+  }
+  @media only screen and (max-width: 991px) {
+    font-size: 40px;
+  }
+  @media only screen and (max-width: 575px) {
+    font-size: 30px;
+  }
+}
+h2 {
+  font-size: $heading__two;
+  @media only screen and (max-width: 991px) {
+    font-size: 26px;
+  }
+  @media only screen and (max-width: 575px) {
+    font-size: 24px;
+  }
+}
+h3 {
+  font-size: $heading__three;
+  @media only screen and (max-width: 991px) {
+    font-size: 18px;
+  }
+}
+h4 {
+  font-size: $heading__four;
+  @media only screen and (max-width: 991px) {
+    font-size: 16px;
+  }
+}
+h5 {
+  font-size: $heading__five;
+  @media only screen and (max-width: 575px) {
+    font-size: 14px;
+  }
+}
+h6 {
+  font-size: $heading__six;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a {
+  color: inherit;
+  text-decoration: none;
+}
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+.section-header{
+  margin-bottom: 40px;
+  position: relative;
+  @media only screen and (max-width: 991px) {
+    margin-bottom: 30px;
+  }
+  .section-sub-title{
+    font-size: 11px;
+    padding: 5px 10px;
+    background-color: $section--bg;
+    text-transform: uppercase;
+    border-radius: 7px;
+    color: $base--color;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  .section-title {
+    margin-bottom: 0;
+    text-transform: capitalize;
+    span{
+      color: $base--color;
+    }
+  }
+  p{
+    margin-top: 10px;
+  }
+}
