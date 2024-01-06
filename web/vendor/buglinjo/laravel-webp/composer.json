@@ -1,0 +1,58 @@
+{
+    "name": "buglinjo/laravel-webp",
+    "type": "library",
+    "description": "Laravel package for WebP image formatting.",
+    "keywords": [
+        "Buglinjo",
+        "LaravelWebp",
+        "Webp",
+        "Laravel"
+    ],
+    "homepage": "https://github.com/buglinjo/laravel-webp",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Irakli Tchitadze",
+            "email": "irakli.tchitadze@gmail.com",
+            "homepage": "https://irakli.dev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "laravel/framework": "~5.1|~6.0|~7.0|~8.0|~9.0|^10.0",
+        "php": "^7.1|^8.0|^8.1",
+        "ext-gd": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": ">=5.4.3",
+        "squizlabs/php_codesniffer": "^2.3|^3.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Buglinjo\\LaravelWebp\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Buglinjo\\LaravelWebp\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
+        "fix-style": "phpcbf -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Buglinjo\\LaravelWebp\\WebpServiceProvider"
+            ],
+            "aliases": {
+                "Webp": "Buglinjo\\LaravelWebp\\Webp"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
